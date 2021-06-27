@@ -83,7 +83,7 @@ public class Predicator {
 
 
         YearMonth ym1 = YearMonth.now();
-        YearMonth ym2 = YearMonth.of(2016, Month.MARCH);
+        YearMonth ym2 = YearMonth.of(2016, Month.JUNE);
 
         System.out.println(ym1.minus(Period.ofMonths(4)).getMonthValue());
         System.out.println(ym2.compareTo(ym1));

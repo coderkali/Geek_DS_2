@@ -10,7 +10,7 @@ public class MathOperation {
 
     public static void main(String[] args) {
         List<MyTest> myTests = Arrays.asList(null,null);
-        myTests.forEach(m -> System.out.println(m.calculate(args[index++],1,2)+ " "));
+        myTests.forEach(m -> System.out.print(m.calculate(args[index++],1,2)+ " "));
     }
 }
 
@@ -19,7 +19,7 @@ class MyTest {
         int c=3;
         switch (choice){
             case "ADD": c+=a+b;
-            case "SUBSTRACT": c+=a-b;
+            case "SUBTRACT": c+=a-b;
             default: c+=a*b;
         }
         return c;

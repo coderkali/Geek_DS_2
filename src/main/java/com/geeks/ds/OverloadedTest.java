@@ -15,8 +15,8 @@ public class OverloadedTest {
 //    }
 //
 
-    public void openAccount(boolean acc,String acc1){
-
+    public String openAccount(boolean acc,String acc1){
+       return null;
     }
 
     private  void openAccount(String acc,boolean refer){

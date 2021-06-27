@@ -1,0 +1,8 @@
+Select h.BUYER_ID , SUM(P.PRICE) as TOTAL_WORTH
+
+from house h join price p using(HOUSE_ID)
+
+group by h.BUYER_ID
+
+having SUM(P.PRICE) > 100 and count(h.HOUSE_ID) >1
+

@@ -63,7 +63,46 @@ public class CommonSUbSTring {
             System.out.println("NO");
             return false;
         }
+        System.out.println("NO");
         return false;
+    }
+
+    public static void commonSubstring(List<String> a, List<String> b) {
+
+        for (int i = 0; i < a.size(); i++) {
+
+            boolean haveSubstr = false;
+
+            for (int j = 0; j < a.get(i).length(); j++) {
+
+                for (int k = 0; k < b.get(i).length(); k++) {
+
+                    if (a.get(i).charAt(j) == b.get(i).charAt(k)) {
+
+                        haveSubstr = true;
+
+                        break;
+
+                    }
+
+                }
+
+                if (haveSubstr)
+
+                    break;
+
+            }
+
+            if (haveSubstr)
+
+                System.out.println("YES");
+
+            else
+
+                System.out.println("NO");
+
+        }
+
     }
 
     // Driver code
@@ -71,11 +110,12 @@ public class CommonSUbSTring {
     {
         String str1 = "hello";
         String str2 = "world";
-        List<String> str1List = Arrays.asList(str1,"hi");
-        List<String> str2List = Arrays.asList(str2,"bye");
-        if (twoStrings(str1List, str2List))
-            System.out.print("Yes");
-        else
-            System.out.print("No");
+        List<String> str1List = Arrays.asList("ab","cd","ef");
+        List<String> str2List = Arrays.asList("af","ee","ef");
+//        if ()
+//            System.out.print("Yes");
+//        else
+//            System.out.print("No");
+        commonSubstring(str1List, str2List);
     }
 }

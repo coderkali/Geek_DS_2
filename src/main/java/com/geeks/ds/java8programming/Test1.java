@@ -9,8 +9,8 @@ public class Test1 {
 
     public static void main(String[] args) {
         Supplier<String> i = () -> "Car";
-        Consumer<String> c= x -> System.out.println(x.toLowerCase());
-        Consumer<String> d= x -> System.out.println(x.toUpperCase());
+        Consumer<String> c= x -> System.out.print(x.toLowerCase());
+        Consumer<String> d= x -> System.out.print(x.toUpperCase());
         c.andThen(d).accept(i.get());
         System.out.println();
     }

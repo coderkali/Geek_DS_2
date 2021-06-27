@@ -9,7 +9,7 @@ class Quadrilitrial extends ShapeClass {
 
 }
 
-class Triangerial extends ShapeClass {
+class erial extends ShapeClass {
 
 }
 
