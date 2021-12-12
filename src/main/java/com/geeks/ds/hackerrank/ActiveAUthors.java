@@ -41,7 +41,6 @@ public class ActiveAUthors {
                     JsonObject jsonResponse = new Gson().fromJson(response, JsonObject.class);
                     totalPages = jsonResponse.get("total_pages").getAsInt();
                     JsonArray data = jsonResponse.getAsJsonArray("data");
-
                     for (JsonElement datum: data) {
                         int submission_count = ((JsonObject) datum).get("submission_count").getAsInt();
                         if(submission_count > thershold){
