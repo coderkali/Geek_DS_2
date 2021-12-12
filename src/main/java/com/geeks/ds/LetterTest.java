@@ -19,7 +19,7 @@ public class LetterTest {
         System.out.println(letters);
 
 
-        ExecutorService executor = Executors.newFixedThreadPool(10);
+        //ExecutorService executor = Executors.newFixedThreadPool(10);
         
     }
 }

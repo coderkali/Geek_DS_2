@@ -11,6 +11,7 @@ import java.util.Date;
 public class CalendarTest {
 
     public static void main(String[] args) {
+        System.console();
         Date aDate = null;
         try{
             aDate = new SimpleDateFormat("yyyy-mm-dd").parse("2012-01-15");

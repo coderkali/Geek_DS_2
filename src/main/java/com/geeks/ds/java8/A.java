@@ -13,8 +13,8 @@ public class A {
     public static void main(String[] args) {
 
         Supplier<String> i = () -> "car";
-        Consumer<String> s = x -> System.out.println(x.toLowerCase());
-        Consumer<String> d = x -> System.out.println(x.toUpperCase());
+        Consumer<String> s = x -> System.out.print(x.toLowerCase());
+        Consumer<String> d = x -> System.out.print(x.toUpperCase());
         s.andThen(d).accept(i.get());
 
         System.out.println();

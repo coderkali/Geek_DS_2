@@ -13,6 +13,8 @@ public class ValidWrapperJavaObjectCreation {
 
         Float f = new Float(23.23);
 
+        //Integer i = new Integer();
+
         //Integer i = Integer.parseUnsignedInt(4);
 
         //FileReader f1 = new FileReader();

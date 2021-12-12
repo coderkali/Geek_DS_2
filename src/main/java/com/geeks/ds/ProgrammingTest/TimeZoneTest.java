@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
 import java.time.ZonedDateTime;
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class TimeZoneTest {
 
@@ -18,6 +19,14 @@ public class TimeZoneTest {
         System.out.println(dateTime1);
 
         System.out.println(Calendar.getInstance().getTime());
+
+
+
+        //-----------------------
+
+
+        TimeZone tz = TimeZone.getTimeZone("GMT");
+        System.out.println(tz.getDisplayName());
 
 
     }
